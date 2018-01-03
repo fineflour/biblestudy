@@ -1,0 +1,15 @@
+language: ruby
+cache: bundler
+rvm:
+- 2.4.1
+addons:
+  postgresql: '9.6'
+before_script:
+- psql -c 'create database rcvtopicalguide_test;' -U postgres
+script:
+- bundle exec rake db:migrate --trace
+- bundle exec rspec spec/controllers/*.rb
+- bundle exec rspec spec/models/*.rb
+- bundle exec rspec spec/features/*.rb
+notifications:
+    slack: bf-ror:q25nViowxCNLbvngYaz8AkKx
