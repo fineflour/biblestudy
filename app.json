@@ -9,14 +9,40 @@
     "SENDGRID_USERNAME": {
       "required": true
     }
+    "HEROKU_APP_NAME": {
+      "required": true
+    },
+    "EMAILS_FROM": {
+      "required": true,
+      "value": "RcvTopicalGuide-Staging <noreply@rcvtopicalguide-staging.herokuapp.com>"
+    },
+    "EXCEPTION_EMAILS_TO": {
+      "required": true,
+      "value": "devs-rcvtopicalguide@beyondfinity.com"
+    },
+    "DEPLOY_ENV": {
+      "required": true
+    },
+    "DISABLE_DATABASE_ENVIRONMENT_CHECK": {
+      "value": "1"
+    }
   },
   "formation": {
+    "worker": {
+      "quantity": 1
+    },
+    "web": {
+      "quantity": 1
+    }
   },
   "addons": [
     "heroku-postgresql",
     "sendgrid"
   ],
   "buildpacks": [
-
+    {
+      "url": "heroku/ruby"
+    }
   ]
 }
+

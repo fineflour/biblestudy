@@ -1,0 +1,21 @@
+# The following ENV vars are required to run the app locally
+# in development environment. The ENV vars will be loaded
+# by figaro (https://github.com/laserlemon/figaro) from
+# config/application.yml. Staging and live deploys probably
+# will require more vars.
+
+# Please keep the config/application.yml.sample file updated
+# with all new ENV var dependencies for future devs :)
+
+# ----------------------------------------------------------
+
+# Indicates the deployment environment (development/staging/live)
+DEPLOY_ENV                : 'development'
+
+# "From" address to be used while sending emails
+EMAILS_FROM               : 'SimpleCensus-Development <noreply@localhost>'
+
+# App's URL (for ActionMailer etc.)
+APP_URL                   : 'http://localhost:3000'
+
+
