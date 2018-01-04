@@ -8,8 +8,6 @@ before_script:
 - psql -c 'create database rcvtopicalguide_test;' -U postgres
 script:
 - bundle exec rake db:migrate --trace
-- bundle exec rspec spec/controllers/*.rb
-- bundle exec rspec spec/models/*.rb
-- bundle exec rspec spec/features/*.rb
+- bundle exec rspec
 notifications:
     slack: bf-ror:q25nViowxCNLbvngYaz8AkKx
