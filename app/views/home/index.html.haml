@@ -1,0 +1,112 @@
+#app.framework7-root
+  .statusbar
+  .panel-backdrop
+  .panel.panel-left.panel-cover
+    .page
+      .page-content
+        .block-title Left Panel
+        .block
+          %p
+            This is a left side panel. You can close it by clicking outsite or on this link:
+            = succeed "." do
+              %a.panel-close{:href => "#"} close me
+            %a.panel-open{"data-panel" => "right", :href => "#"} Right Panel
+
+
+        .block-title Main View Navigation
+        .list.links-list
+          %ul
+            %li
+              %a.panel-close{:href => "/accordion/"} Accordion
+            %li
+              %a.panel-close{:href => "/action-sheet/"} Action Sheet
+            %li
+              %a.panel-close{:href => "/badge/"} Badge
+            %li
+              %a.panel-close{:href => "/buttons/"} Buttons
+            %li
+              %a.panel-close{:href => "/cards/"} Cards
+            %li
+              %a.panel-close{:href => "/checkbox/"} Checkbox
+            %li
+              %a.panel-close{:href => "/chips/"} Chips/Tags
+            %li
+              %a.panel-close{:href => "/contacts-list/"} Contacts List
+            %li
+              %a.panel-close{:href => "/data-table/"} Data Table
+        .block
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus, viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.
+          %p Duis ut mauris sollicitudin, venenatis nisi sed, luctus ligula. Phasellus blandit nisl ut lorem semper pharetra. Nullam tortor nibh, suscipit in consequat vel, feugiat sed quam. Nam risus libero, auctor vel tristique ac, malesuada ut ante. Sed molestie, est in eleifend sagittis, leo tortor ullamcorper erat, at vulputate eros sapien nec libero. Mauris dapibus laoreet nibh quis bibendum. Fusce dolor sem, suscipit in iaculis id, pharetra at urna. Pellentesque tempor congue massa quis faucibus. Vestibulum nunc eros, convallis blandit dui sit amet, gravida adipiscing libero.
+  .panel.panel-right.panel-reveal
+    .view.view-init.view-right{"data-url" => "/", :name => "right"}
+      .navbar
+        .navbar-inner.sliding
+          .title{:style => "left: 0px;"} Right Panel
+      .page.page-current
+        .page-content
+          .block
+            %p
+              This is a right side panel. You can close it by clicking outsite or on this link:
+              = succeed "." do
+                %a.panel-close{:href => "#"} close me
+          .block-title Panel Navigation
+          .list.links-list
+            %ul
+              %li
+                %a{:href => "/panel-right-1/"} Right panel page 1
+              %li
+                %a{:href => "/panel-right-2/"} Right panel page 2
+  .view.view-main.view-init.ios-edges{"data-url" => "/"}
+    .navbar
+      .navbar-inner.navbar-current
+        .left
+          %a.link.icon-only.panel-open{"data-panel" => "left", :href => "#"}
+            %i.icon.f7-icons.ios-only menu
+        .title.sliding{:style => "left: 0px;"} Framework7
+        .right
+          %a.link.icon-only.searchbar-enable{"data-searchbar" => ".searchbar-components"}
+            %i.icon.f7-icons.ios-only search_strong
+        %form.searchbar.searchbar-expandable.searchbar-components.searchbar-init{"data-search-container" => ".components-list", "data-search-in" => "a"}
+          .searchbar-inner
+            .searchbar-input-wrap
+              %input{:placeholder => "Search components", :type => "search"}/
+              %i.searchbar-icon
+              %span.input-clear-button
+            %span.searchbar-disable-button Cancel
+    .page.page-current
+      .searchbar-backdrop
+      .page-content
+        .block-title List View Accordion
+        .list.accordion-list
+          %ul
+            %li.accordion-item
+              %a.item-content.item-link{:href => "#"}
+                .item-inner
+                  .item-title ETERNAL LIFE
+              .accordion-item-content
+                .block
+                  %p The divine, uncreated life of God
+                  %p Different from the physical or soulish life
+                  %p The life of the tree of life
+                  %p A living person, Christ Himself
+                  %p The life which regenerates the believers to be God’s children
+            %li.accordion-item
+              %a.item-content.item-link{:href => "#"}
+                .item-inner
+                  .item-title MAN
+              .accordion-item-content
+                .block
+                  %p Created as a vessel to contain God
+                  %p With three parts
+            %li.accordion-item
+              %a.item-content.item-link{:href => "#"}
+                .item-inner
+                  .item-title THE KINGDOM
+              .accordion-item-content
+                .block
+                  %p The kingdom of God
+                  %p The kingdom of the heavens
+                  %p The kingdom reward
+
+
+
