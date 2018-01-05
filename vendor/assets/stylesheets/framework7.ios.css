@@ -2026,7 +2026,7 @@ html.with-statusbar.device-iphone-x .panel {
     margin-right: calc(15px + env(safe-area-inset-right));
   }
 }
-@media (orientation: landscape) and all and (min-width: 768px) {
+@media (orientation: landscape) and (min-width: 768px) {
   .ios.device-iphone-x .ios-left-edge .block.tablet-inset:not(.no-ios-edges):not(.no-ios-left-edge),
   .ios.device-iphone-x .ios-edges .block.tablet-inset:not(.no-ios-edges):not(.no-ios-left-edge),
   .ios.device-iphone-x .popup .block.tablet-inset:not(.no-ios-edges):not(.no-ios-left-edge),
@@ -2036,7 +2036,7 @@ html.with-statusbar.device-iphone-x .panel {
     margin-left: calc(15px + env(safe-area-inset-left));
   }
 }
-@media (orientation: landscape) and all and (min-width: 768px) {
+@media (orientation: landscape) and (min-width: 768px) {
   .ios.device-iphone-x .ios-right-edge .block.tablet-inset:not(.no-ios-edges):not(.no-ios-right-edge),
   .ios.device-iphone-x .ios-edges .block.tablet-inset:not(.no-ios-edges):not(.no-ios-right-edge),
   .ios.device-iphone-x .popup .block.tablet-inset:not(.no-ios-edges):not(.no-ios-right-edge),
