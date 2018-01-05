@@ -34,35 +34,15 @@
               %a.panel-close{:href => "/contacts-list/"} Contacts List
             %li
               %a.panel-close{:href => "/data-table/"} Data Table
-        .block
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus, viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.
-          %p Duis ut mauris sollicitudin, venenatis nisi sed, luctus ligula. Phasellus blandit nisl ut lorem semper pharetra. Nullam tortor nibh, suscipit in consequat vel, feugiat sed quam. Nam risus libero, auctor vel tristique ac, malesuada ut ante. Sed molestie, est in eleifend sagittis, leo tortor ullamcorper erat, at vulputate eros sapien nec libero. Mauris dapibus laoreet nibh quis bibendum. Fusce dolor sem, suscipit in iaculis id, pharetra at urna. Pellentesque tempor congue massa quis faucibus. Vestibulum nunc eros, convallis blandit dui sit amet, gravida adipiscing libero.
-  .panel.panel-right.panel-reveal
-    .view.view-init.view-right{"data-url" => "/", :name => "right"}
-      .navbar
-        .navbar-inner.sliding
-          .title{:style => "left: 0px;"} Right Panel
-      .page.page-current
-        .page-content
-          .block
-            %p
-              This is a right side panel. You can close it by clicking outsite or on this link:
-              = succeed "." do
-                %a.panel-close{:href => "#"} close me
-          .block-title Panel Navigation
-          .list.links-list
-            %ul
-              %li
-                %a{:href => "/panel-right-1/"} Right panel page 1
-              %li
-                %a{:href => "/panel-right-2/"} Right panel page 2
+
+
   .view.view-main.view-init.ios-edges{"data-url" => "/"}
     .navbar
       .navbar-inner.navbar-current
         .left
           %a.link.icon-only.panel-open{"data-panel" => "left", :href => "#"}
             %i.icon.f7-icons.ios-only menu
-        .title.sliding{:style => "left: 0px;"} Framework7
+        .title.sliding{:style => "left: 0px;color:green;"} Topical Guide
         .right
           %a.link.icon-only.searchbar-enable{"data-searchbar" => ".searchbar-components"}
             %i.icon.f7-icons.ios-only search_strong
@@ -76,37 +56,135 @@
     .page.page-current
       .searchbar-backdrop
       .page-content
-        .block-title List View Accordion
+        .block-title{style:"font-weight:bolder;"} List Of Topics
         .list.accordion-list
           %ul
             %li.accordion-item
               %a.item-content.item-link{:href => "#"}
                 .item-inner
-                  .item-title ETERNAL LIFE
+                  .item-title{style:"color:Orange;font-weight:bolder;"} Eternal life
               .accordion-item-content
                 .block
-                  %p The divine, uncreated life of God
-                  %p Different from the physical or soulish life
-                  %p The life of the tree of life
-                  %p A living person, Christ Himself
-                  %p The life which regenerates the believers to be God’s children
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    Different from the physical or soulish life
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 3:151; 17:31; Rom. 6:233; Eph. 4:182; 1 Tim. 1:162; 6:122-3; 2 Tim. 1:103-4; 1 John 1:21-6 )
+                  %hr
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    The life of the tree of life
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 1:41; Rev. 2:76; 22:21, 144)
+                  %hr
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    A living person, Christ Himself
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 14:61; 1 John 5:111, 121; 2:251, 3; Col. 3:41-2 )
+                  %hr
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    The life which regenerates the believers to be God’s children
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 1:122; 3:33, 62, 161)
+                  %hr
             %li.accordion-item
               %a.item-content.item-link{:href => "#"}
                 .item-inner
-                  .item-title MAN
+                  .item-title{style:"color:Orange;font-weight:bolder;"} Man
               .accordion-item-content
                 .block
-                  %p Created as a vessel to contain God
-                  %p With three parts
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    Created as a vessel to contain God
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( Rom. 9:211; 2 Cor. 4:71-2; 2 Tim. 2:203, 213; 1 Pet. 3:73; Acts 9:151 )
+                  %hr
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    With three parts
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 14:61; 1 John 5:111, 121; 2:251, 3; Col. 3:41-2 )
+                  %hr
             %li.accordion-item
               %a.item-content.item-link{:href => "#"}
                 .item-inner
-                  .item-title THE KINGDOM
+                  .item-title{style:"color:Orange;font-weight:bolder;"} The kingdom
               .accordion-item-content
                 .block
-                  %p The kingdom of God
-                  %p The kingdom of the heavens
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    The kingdom of God
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( Rom. 9:211; 2 Cor. 4:71-2; 2 Tim. 2:203, 213; 1 Pet. 3:73; Acts 9:151 )
+                  %hr
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    The kingdom of the heavens
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 14:61; 1 John 5:111, 121; 2:251, 3; Col. 3:41-2 )
+                  %hr
                   %p The kingdom reward
+                  %i ( John 1:122; 3:33, 62, 161)
+                  %hr
+            %li.accordion-item
+              %a.item-content.item-link{:href => "#"}
+                .item-inner
+                  .item-title{style:"color:Orange;font-weight:bolder;"} The Gospel
+              .accordion-item-content
+                .block
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    Different from the physical or soulish life
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 3:151; 17:31; Rom. 6:233; Eph. 4:182; 1 Tim. 1:162; 6:122-3; 2 Tim. 1:103-4; 1 John 1:21-6 )
+                  %hr
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    The life of the tree of life
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                    ( John 1:41; Rev. 2:76; 22:21, 144)
+                  %hr
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    A living person, Christ Himself
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 14:61; 1 John 5:111, 121; 2:251, 3; Col. 3:41-2 )
+                  %hr
+                  %p{style:"font-family:bold;font-weight:bolder;"}
+                    The life which regenerates the believers to be God’s children
+                  %i
+                    %label.item-checkbox.item-content
+                      %input{:checked => "checked", :name => "demo-checkbox", :type => "checkbox"}/
+                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
+                      ( John 1:122; 3:33, 62, 161)
+                  %hr
+
+
+
 
 
 

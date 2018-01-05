@@ -4,6 +4,7 @@ $( document ).on('turbolinks:load', function () {
     root: '#app',
     // App Name
     name: 'My App',
+    theme: 'ios',
     // App id
     id: 'com.myapp.test',
     // Enable swipe panel
@@ -21,4 +22,5 @@ $( document ).on('turbolinks:load', function () {
   });
 
   var mainView = app.views.create('.view-main');
+  app.navbar.show('.navbar', true);
 })
