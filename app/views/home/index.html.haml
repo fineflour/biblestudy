@@ -4,36 +4,28 @@
   .panel.panel-left.panel-cover
     .page
       .page-content
-        .block-title Left Panel
-        .block
-          %p
-            This is a left side panel. You can close it by clicking outsite or on this link:
-            = succeed "." do
-              %a.panel-close{:href => "#"} close me
-            %a.panel-open{"data-panel" => "right", :href => "#"} Right Panel
 
-
-        .block-title Main View Navigation
+        .block-title Side Menu Navigation
         .list.links-list
           %ul
             %li
-              %a.panel-close{:href => "/accordion/"} Accordion
+              %a.panel-close{:href => "#"} Sample 1
             %li
-              %a.panel-close{:href => "/action-sheet/"} Action Sheet
+              %a.panel-close{:href => "#"} Sample 2
             %li
-              %a.panel-close{:href => "/badge/"} Badge
+              %a.panel-close{:href => "#"} Sample 3
             %li
-              %a.panel-close{:href => "/buttons/"} Buttons
+              %a.panel-close{:href => "#"} Sample 4
             %li
-              %a.panel-close{:href => "/cards/"} Cards
+              %a.panel-close{:href => "#"} Sample 5
             %li
-              %a.panel-close{:href => "/checkbox/"} Checkbox
+              %a.panel-close{:href => "#"} Sample 6
             %li
-              %a.panel-close{:href => "/chips/"} Chips/Tags
+              %a.panel-close{:href => "#"} Sample 7
             %li
-              %a.panel-close{:href => "/contacts-list/"} Contacts List
+              %a.panel-close{:href => "#"} Sample 8
             %li
-              %a.panel-close{:href => "/data-table/"} Data Table
+              %a.panel-close{:href => "#"} Sample 9
 
 
   .view.view-main.view-init.ios-edges{"data-url" => "/"}
@@ -60,43 +52,65 @@
         .list.accordion-list
           %ul
             %li.accordion-item
-              %a.item-content.item-link{:href => "#"}
+              %a.item-content.item-link.external{:href => "/home/pages/eternal_life", style:"color:Orange;font-weight:bolder;"}
                 .item-inner
-                  .item-title{style:"color:Orange;font-weight:bolder;"} Eternal life
-              .accordion-item-content
-                .block
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    Different from the physical or soulish life
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 3:151; 17:31; Rom. 6:233; Eph. 4:182; 1 Tim. 1:162; 6:122-3; 2 Tim. 1:103-4; 1 John 1:21-6 )
-                  %hr
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    The life of the tree of life
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 1:41; Rev. 2:76; 22:21, 144)
-                  %hr
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    A living person, Christ Himself
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 14:61; 1 John 5:111, 121; 2:251, 3; Col. 3:41-2 )
-                  %hr
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    The life which regenerates the believers to be God’s children
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 1:122; 3:33, 62, 161)
-                  %hr
+                  .item-title THE WORD OF GOD
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title GOD
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title THE ECONOMY OF GOD
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title CHRIST
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title THE SPIRIT
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title ETERNAL LIFE
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title DIVINE TRUTH—REALITY
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title MAN
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title THE GOSPEL
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title SALVATION
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title CHRISTIAN EXPERIENCE
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title THE BELIEVERS
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title THE CHURCH—THE BODY OF CHRIST
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title THE KINGDOM
+            %li.accordion-item
+              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+                .item-inner
+                  .item-title THE NEW JERUSALEM
             %li.accordion-item
               %a.item-content.item-link{:href => "#"}
                 .item-inner
