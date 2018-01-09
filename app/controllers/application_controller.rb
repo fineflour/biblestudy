@@ -8,4 +8,9 @@ class ApplicationController < ActionController::Base
   def content
     render layout: 'application'
   end
+
+  def the_word_of_god
+    render layout: 'application'
+  end
+
 end
