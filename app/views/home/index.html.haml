@@ -1,204 +1,75 @@
-#app.framework7-root
-  .statusbar
-  .panel-backdrop
-  .panel.panel-left.panel-cover
-    .page
-      .page-content
-
-        .block-title Side Menu Navigation
-        .list.links-list
-          %ul
-            %li
-              %a.panel-close{:href => "#"} Sample 1
-            %li
-              %a.panel-close{:href => "#"} Sample 2
-            %li
-              %a.panel-close{:href => "#"} Sample 3
-            %li
-              %a.panel-close{:href => "#"} Sample 4
-            %li
-              %a.panel-close{:href => "#"} Sample 5
-            %li
-              %a.panel-close{:href => "#"} Sample 6
-            %li
-              %a.panel-close{:href => "#"} Sample 7
-            %li
-              %a.panel-close{:href => "#"} Sample 8
-            %li
-              %a.panel-close{:href => "#"} Sample 9
-
-
-  .view.view-main.view-init.ios-edges{"data-url" => "/"}
-    .navbar
-      .navbar-inner.navbar-current
-        .left
-          %a.link.icon-only.panel-open{"data-panel" => "left", :href => "#"}
-            %i.icon.f7-icons.ios-only menu
-        .title.sliding{:style => "left: 0px;color:green;"} Topical Guide
-        .right
-          %a.link.icon-only.searchbar-enable{"data-searchbar" => ".searchbar-components"}
-            %i.icon.f7-icons.ios-only search_strong
-        %form.searchbar.searchbar-expandable.searchbar-components.searchbar-init{"data-search-container" => ".components-list", "data-search-in" => "a"}
-          .searchbar-inner
-            .searchbar-input-wrap
-              %input{:placeholder => "Search components", :type => "search"}/
-              %i.searchbar-icon
-              %span.input-clear-button
-            %span.searchbar-disable-button Cancel
-    .page.page-current
-      .searchbar-backdrop
-      .page-content
-        .block-title{style:"font-weight:bolder;"} List Of Topics
-        .list.accordion-list
-          %ul
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "/home/pages/eternal_life", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title THE WORD OF GOD
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title GOD
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title THE ECONOMY OF GOD
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title CHRIST
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title THE SPIRIT
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title ETERNAL LIFE
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title DIVINE TRUTH—REALITY
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title MAN
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title THE GOSPEL
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title SALVATION
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title CHRISTIAN EXPERIENCE
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title THE BELIEVERS
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title THE CHURCH—THE BODY OF CHRIST
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title THE KINGDOM
-            %li.accordion-item
-              %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
-                .item-inner
-                  .item-title THE NEW JERUSALEM
-            %li.accordion-item
-              %a.item-content.item-link{:href => "#"}
-                .item-inner
-                  .item-title{style:"color:Orange;font-weight:bolder;"} Man
-              .accordion-item-content
-                .block
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    Created as a vessel to contain God
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( Rom. 9:211; 2 Cor. 4:71-2; 2 Tim. 2:203, 213; 1 Pet. 3:73; Acts 9:151 )
-                  %hr
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    With three parts
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 14:61; 1 John 5:111, 121; 2:251, 3; Col. 3:41-2 )
-                  %hr
-            %li.accordion-item
-              %a.item-content.item-link{:href => "#"}
-                .item-inner
-                  .item-title{style:"color:Orange;font-weight:bolder;"} The kingdom
-              .accordion-item-content
-                .block
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    The kingdom of God
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( Rom. 9:211; 2 Cor. 4:71-2; 2 Tim. 2:203, 213; 1 Pet. 3:73; Acts 9:151 )
-                  %hr
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    The kingdom of the heavens
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 14:61; 1 John 5:111, 121; 2:251, 3; Col. 3:41-2 )
-                  %hr
-                  %p The kingdom reward
-                  %i ( John 1:122; 3:33, 62, 161)
-                  %hr
-            %li.accordion-item
-              %a.item-content.item-link{:href => "#"}
-                .item-inner
-                  .item-title{style:"color:Orange;font-weight:bolder;"} The Gospel
-              .accordion-item-content
-                .block
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    Different from the physical or soulish life
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 3:151; 17:31; Rom. 6:233; Eph. 4:182; 1 Tim. 1:162; 6:122-3; 2 Tim. 1:103-4; 1 John 1:21-6 )
-                  %hr
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    The life of the tree of life
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                    ( John 1:41; Rev. 2:76; 22:21, 144)
-                  %hr
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    A living person, Christ Himself
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 14:61; 1 John 5:111, 121; 2:251, 3; Col. 3:41-2 )
-                  %hr
-                  %p{style:"font-family:bold;font-weight:bolder;"}
-                    The life which regenerates the believers to be God’s children
-                  %i
-                    %label.item-checkbox.item-content
-                      %input{:name => "demo-checkbox", :type => "checkbox"}/
-                      %i.icon.icon-checkbox{style:"border-radius:2px;"}
-                      ( John 1:122; 3:33, 62, 161)
-                  %hr
-
-
-
-
-
-
+.navbar
+  .navbar-inner
+    .left
+      %a.link.icon-only.open-panel{:href => "#"}
+        %i.icon.icon-bars-blue
+    .center
+      Topics
+.page
+  .page-content
+    .list-block.media-list
+      %ul
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "/home/pages/eternal_life", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title THE WORD OF GOD
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title GOD
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title THE ECONOMY OF GOD
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title CHRIST
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title THE SPIRIT
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title ETERNAL LIFE
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title DIVINE TRUTH—REALITY
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title MAN
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title THE GOSPEL
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title SALVATION
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title CHRISTIAN EXPERIENCE
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title THE BELIEVERS
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title THE CHURCH—THE BODY OF CHRIST
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title THE KINGDOM
+        %li.accordion-item
+          %a.item-content.item-link.external{:href => "#", style:"color:Orange;font-weight:bolder;"}
+            .item-inner
+              .item-title THE NEW JERUSALEM
+        %li.accordion-item
+          %a.item-content.item-link{:href => "#"}
+            .item-inner
+              .item-title{style:"color:Orange;font-weight:bolder;"} Man

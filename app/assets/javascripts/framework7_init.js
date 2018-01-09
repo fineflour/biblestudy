@@ -1,26 +1,18 @@
-$( document ).on('turbolinks:load', function () {
-  var app = new Framework7({
-    // App root element
-    root: '#app',
-    // App Name
-    name: 'My App',
-    theme: 'ios',
-    // App id
-    id: 'com.myapp.test',
-    // Enable swipe panel
-    panel: {
-      swipe: 'left',
+window.F7H = {
+  app: new Framework7({
+    pushState: true,
+    onAjaxStart: function(xhr) {
+      return F7H.app.showIndicator();
     },
-    // Add default routes
-    routes: [
-      {
-        path: '/about/',
-        url: 'about.html',
-      },
-    ],
-    // ... other parameters
-  });
-
-  var mainView = app.views.create('.view-main');
-  app.navbar.show('.navbar', true);
-})
+    onAjaxComplete: function(xhr) {
+      return F7H.app.hideIndicator();
+    }
+  }),
+  dom: Framework7.$
+};
+window.Phone = {
+  Views: {}
+};
+Phone.Views.Main = F7H.app.addView('.view-main', {
+  dynamicNavbar: true
+});

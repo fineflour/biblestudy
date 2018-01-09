@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  respond_to :html, :js
+  layout 'application_phone'
   def index
   end
 

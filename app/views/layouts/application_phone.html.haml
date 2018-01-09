@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    / Required meta tags
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui", :name => "viewport"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %meta{:content => "black", :name => "apple-mobile-web-app-status-bar-style"}/
+    / Your app title
+    %title Framework7
+    / Path to Framework7 Library CSS
+    = stylesheet_link_tag "phone", media: "all", "data-turbolinks-track" => true
+  %body.phone
+    / Status bar overlay for full screen mode (PhoneGap)
+    .statusbar-overlay
+    / Panels overlay
+    .panel-overlay
+    / Views
+    .views
+      .view.view-main
+        = yield
+    = javascript_include_tag "phone"
