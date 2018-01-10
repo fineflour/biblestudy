@@ -1,15 +1,7 @@
-.navbar
-  .navbar-inner
-    .left
-      %a.link.icon-only.open-panel{:href => "#"}
-        %i.icon.icon-bars-blue
-    .center
-      All posts
-.page
-  .page-content
-    .content-block-title
-      New Post
-    .list-block
-      %ul
-        = panel_link text: "New Page", icon: 'edit', path: home_sample1_path
-        = panel_link text: "All Posts", icon: 'bars', path: home_sample2_path
+.page-content
+  .content-block-title
+    New Post
+  .list-block
+    %ul
+      = panel_link text: "New Page", icon: 'edit', path: home_sample1_path
+      = panel_link text: "All Posts", icon: 'bars', path: home_sample2_path

@@ -8,10 +8,15 @@
     %meta{:content => "default", :name => "apple-mobile-web-app-status-bar-style"}/
     %meta{:content => "#2196f3", :name => "theme-color"}/
     %meta{:content => "default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:", "http-equiv" => "Content-Security-Policy"}/
-    %title Framework7
+    %title RCV Topical Guide
     / %link{:href => "img/f7-icon-square.png", :rel => "apple-touch-icon"}/
     / %link{:href => "img/f7-icon.png", :rel => "icon"}/
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'application', media: 'all'
   %body
-    = yield
+    #app
+      .statusbar
+      .view.view-main
+        .page
+          = render 'shared/header'
+          = yield
+    = javascript_include_tag 'application'
