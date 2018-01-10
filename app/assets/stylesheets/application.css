@@ -11,5 +11,5 @@
  * It is generally better to create a new file per style scope.
  *
  *= require load_fonts
- *= require framework7.ios
+ *= require framework7
  */
