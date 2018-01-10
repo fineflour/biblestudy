@@ -14,4 +14,44 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = yield
+    #app.framework7-root
+      .statusbar
+      .panel-backdrop
+      .panel.panel-left.panel-cover
+        .page
+          .page-content
+
+            .block-title Side Menu Navigation
+            .list.links-list
+              %ul
+                %li
+                  %a.panel-close{:href => "#"} Sample 1
+                %li
+                  %a.panel-close{:href => "#"} Sample 2
+                %li
+                  %a.panel-close{:href => "#"} Sample 3
+                %li
+                  %a.panel-close{:href => "#"} Sample 4
+                %li
+                  %a.panel-close{:href => "#"} Sample 5
+                %li
+                  %a.panel-close{:href => "#"} Sample 6
+                %li
+                  %a.panel-close{:href => "#"} Sample 7
+                %li
+                  %a.panel-close{:href => "#"} Sample 8
+                %li
+                  %a.panel-close{:href => "#"} Sample 9
+
+
+      .view.view-main.view-init.ios-edges{"data-url" => "/"}
+        .navbar
+          .navbar-inner.navbar-current
+            .left
+              %a.link.icon-only.panel-open{"data-panel" => "left", :href => "#"}
+                %i.icon.f7-icons.ios-only menu
+            .title.sliding{:style => "left: 0px;color:green;"} Topical Guide
+            .right
+              %a.link.icon-only.searchbar-enable{"data-searchbar" => ".searchbar-components"}
+                %i.icon.f7-icons.ios-only search_strong
+        = yield
