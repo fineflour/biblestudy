@@ -23,6 +23,10 @@
         path: '/home/pages/:file',
         url: '/home/pages/{{file}}',
       },
+      {
+        path: 'http://online.recoveryversion.org/FootNotes.asp?FNtsID=6966',
+        url: 'http://online.recoveryversion.org/FootNotes.asp?FNtsID=6966',
+      },
     ],
   });
 
