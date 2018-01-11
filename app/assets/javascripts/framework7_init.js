@@ -23,4 +23,13 @@ $( document ).on('turbolinks:load', function () {
 
   var mainView = app.views.create('.view-main');
   app.navbar.show('.navbar', true);
+
+  app.on('accordionOpened', function (el) {
+    h_el = el.getElementsByTagName('a')[0]
+    h_el.className = h_el.className + ' subtopic-open'
+  });
+  app.on('accordionOpened', function (el) {
+    h_el = el.getElementsByTagName('a')[0]
+    h_el.className =  h_el.className ('subtopic-close')
+  });
 })
