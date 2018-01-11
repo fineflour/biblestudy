@@ -2,5 +2,7 @@
   .navbar-inner
     .left
       - if back == "true"
-        %a.link.back{:href => "/"} Back
+        %a.link.back{:href => "/"}
+          %i.icon.icon-back{:style => ""}
+          %span.ios-only Back
     .title #{title}
