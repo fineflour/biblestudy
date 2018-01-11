@@ -19,6 +19,10 @@
         path: '/home/sample2',
         url: '/home/sample2',
       },
+      {
+        path: '/home/pages/:file',
+        url: '/home/pages/{{file}}',
+      },
     ],
   });
 

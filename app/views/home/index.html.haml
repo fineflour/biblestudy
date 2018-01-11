@@ -1,7 +1,20 @@
+= render partial: 'shared/header', locals: { back: "false", title: "Topical Guide" }
 .page-content
-  .content-block-title
-    New Post
-  .list-block
+  .block-title{style:"font-weight:bolder;"} List Of Topics
+  .list.accordion-list
     %ul
-      = panel_link text: "New Page", icon: 'edit', path: home_sample1_path
-      = panel_link text: "All Posts", icon: 'bars', path: home_sample2_path
+      = panel_link text: "THE WORD OF GOD", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "GOD", icon: 'bars', path: 'home/pages/sample2'
+      = panel_link text: "THE ECONOMY OF GOD", icon: 'bars', path: 'home/pages/sample3'
+      = panel_link text: "CHRIST", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "THE SPIRIT", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "ETERNAL LIFE", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "DIVINE TRUTH—REALITY", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "MAN", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "THE GOSPEL", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "SALVATION", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "CHRISTIAN EXPERIENCE", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "THE BELIEVERS", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "THE CHURCH—THE BODY OF CHRIST", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "THE KINGDOM", icon: 'bars', path: 'home/pages/sample1'
+      = panel_link text: "THE NEW JERUSALEM", icon: 'bars', path: 'home/pages/sample1'

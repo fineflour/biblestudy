@@ -1,6 +1,6 @@
 .navbar
   .navbar-inner
     .left
-      %a.link.back{:href => "/"} Home
-    .title Topical Guide
-    
+      - if back == "true"
+        %a.link.back{:href => "/"} Back
+    .title #{title}
