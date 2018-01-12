@@ -2,7 +2,7 @@ h4 {
   display: inline;
   white-space: nowrap;
   font-size:15px;
-  font-weight:bold;
+  font-weight:normal;
 }
 .left{
   margin-left: 12px;
@@ -13,7 +13,7 @@ h4 {
 
 .unit-sub-sub-topic {
   font-style: italic;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 15px;
   margin-bottom: 3px;
   color:grey;
@@ -41,7 +41,7 @@ h4 {
 
 .verse-gap {
   margin-left: 7px;
-  line-height:  38px;
+  line-height:  42px;
 }
 
 .subscript-top {
