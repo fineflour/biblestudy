@@ -5,7 +5,7 @@ h4 {
   font-weight:normal;
   background-color: #eee;
   border-radius: 4px;
-  padding: 5px 10px;
+  padding: 8px 10px;
   margin: 5px 3px;
 
 }
@@ -18,7 +18,7 @@ h3 {
   font-style: italic;
   color:grey;
   margin-bottom: 3px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .sub-topic {
@@ -29,6 +29,13 @@ h3 {
   position: relative;
   margin-left: 2px;
   top: -3px;
+}
+
+.hr{
+    background-color: #c8c7cc;
+    height: 1px;
+    width: 100%;
+    margin-top: 12px;
 }
 
 /*.unit-sub-sub-topic {
