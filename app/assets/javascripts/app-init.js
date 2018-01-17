@@ -39,5 +39,19 @@
   });
   app.on('accordionOpened', function (el) {
     h_el = el.getElementsByTagName('a')[0]
-    h_el.className =  h_el.className ('subtopic-close')
+    h_el.className =  h_el.className + ' subtopic-close'
   });
+
+  // preloader
+  var $$ = Dom7;
+  $$(document).on('page:beforeout', function (e) {
+    app.preloader.show();
+    $$('a').on('touchmove:passive', function (event) {
+      $(this).css("background-color", "red");
+    })
+  })
+
+  $$(document).on('page:afterin', function (e) {
+    app.preloader.hide();
+  })
+
