@@ -9,23 +9,15 @@
     routes: [
       {
         path: '/',
+        url: '/home/welcome_page',
+      },
+      {
+        path: '/home/index',
         url: '/home/index',
-      },
-      {
-        path: '/home/sample1',
-        url: '/home/sample1',
-      },
-      {
-        path: '/home/sample2',
-        url: '/home/sample2',
       },
       {
         path: '/home/pages/:file',
         url: '/home/pages/{{file}}',
-      },
-      {
-        path: 'http://online.recoveryversion.org/FootNotes.asp?FNtsID=6966',
-        url: 'http://online.recoveryversion.org/FootNotes.asp?FNtsID=6966',
       },
     ],
   });

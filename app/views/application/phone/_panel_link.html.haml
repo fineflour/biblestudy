@@ -2,4 +2,8 @@
   = link_to path, class: 'close-panel item-link' do
     .item-content{style:"color:#2679b5;font-weight:bolder;"}
       .item-inner
-        .item-title= text
+        .item-title
+          - if icon_name
+            = image_tag(icon_name, size: "35x25", alt: "book image", style:"margin-bottom: -5px;")
+            &nbsp
+          = text
