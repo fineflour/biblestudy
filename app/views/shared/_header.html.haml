@@ -5,4 +5,6 @@
         %a.link.back{:href => "/"}
           %i.icon.icon-back{:style => ""}
           %span.ios-only Back
-    .title #{title}
+    .title
+      = image_tag("logo-mark.svg", size: "35x25", alt: "book image", style:"margin-bottom: -5px;")
+      = "#{title}"

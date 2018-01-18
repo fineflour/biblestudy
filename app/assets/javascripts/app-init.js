@@ -46,9 +46,6 @@
   var $$ = Dom7;
   $$(document).on('page:beforeout', function (e) {
     app.preloader.show();
-    $$('a').on('touchmove:passive', function (event) {
-      $(this).css("background-color", "red");
-    })
   })
 
   $$(document).on('page:afterin', function (e) {
