@@ -1,0 +1,19 @@
+= render partial: 'shared/header', locals: { back: "false", title: "Bfa Study Companion" }
+.page-content
+  .block-title{style:"font-weight:bolder;"} STUDY
+  .list
+    %ul
+      = panel_link text: "The Word Of God", icon: 'bars', path: 'home/index'
+      = panel_link text: "God", icon: 'bars'
+      = panel_link text: "The Economy Of God", icon: 'bars'
+  .block-title{style:"font-weight:bolder;"} SPREAD THE WORD
+  .list
+    %ul
+      = panel_link text: "The Word Of God", icon: 'bars'
+      = panel_link text: "God", icon: 'bars'
+      = panel_link text: "The Economy Of God", icon: 'bars'
+  .block-title{style:"font-weight:bolder;"} ABOUT
+  .list
+    %ul
+      = panel_link text: "Christ", icon: 'bars'
+      = panel_link text: "The Sprit", icon: 'bars'
