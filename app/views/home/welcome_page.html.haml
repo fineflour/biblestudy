@@ -8,15 +8,15 @@
           .item-content{style:"color:#2679b5;font-weight:bolder;"}
             .item-inner
               .item-title
-                %i.fa.fa-sliders
+                %i.fa.fa-list.green
                 &nbsp;
-                Choose a Bible Study Unit
+                Bible Study Topics
       %li
         = link_to 'home/companion_to_becl', class: 'close-panel item-link ripple-color-red' do
           .item-content{style:"color:#2679b5;font-weight:bolder;"}
             .item-inner
               .item-title
-                %i.fa.fa-life-ring
+                %i.fa.fa-briefcase.blue
                 &nbsp;
                 Companion to BECL (Basic Elements of the Christian Life)
       %li
@@ -24,7 +24,7 @@
           .item-content{style:"color:#2679b5;font-weight:bolder;"}
             .item-inner
               .item-title
-                %i.fa.fa-download
+                %i.fa.fa-download.violet
                 &nbsp;
                 Download BECL Books (Basic Elements of the Christian Life Books)
 
@@ -33,46 +33,10 @@
   .list
     %ul
       %li
-        = link_to '#', class: 'close-panel item-link ripple-color-red' do
+        = link_to 'http://biblesforamerica.org/free-bible/', class: 'link external close-panel item-link ripple-color-red', target: :blank do
           .item-content{style:"color:#2679b5;font-weight:bolder;"}
             .item-inner
               .item-title
-                %i.fa.fa-facebook-square
+                %i.fa.fa-book.pink
                 &nbsp;
-                Facebook
-      %li
-        = link_to '#', class: 'close-panel item-link ripple-color-red' do
-          .item-content{style:"color:#2679b5;font-weight:bolder;"}
-            .item-inner
-              .item-title
-                %i.fa.fa-share-alt-square
-                &nbsp;
-                More Ways to Share
-      %li
-        = link_to '#', class: 'close-panel item-link ripple-color-red' do
-          .item-content{style:"color:#2679b5;font-weight:bolder;"}
-            .item-inner
-              .item-title
-                %i.fa.fa-book
-                &nbsp;
-                Order a Free New Testament
-
-  .block-title{style:"font-weight:bolder;"} ABOUT
-  .list
-    %ul
-      %li
-        = link_to '#', class: 'close-panel item-link ripple-color-red' do
-          .item-content{style:"color:#2679b5;font-weight:bolder;"}
-            .item-inner
-              .item-title
-                %i.fa.fa-book
-                &nbsp;
-                Bibles for America
-      %li
-        = link_to '#', class: 'close-panel item-link ripple-color-red' do
-          .item-content{style:"color:#2679b5;font-weight:bolder;"}
-            .item-inner
-              .item-title
-                %i.fa.fa-code-fork
-                &nbsp;
-                The Recovery Version
+                Order a Free Bible

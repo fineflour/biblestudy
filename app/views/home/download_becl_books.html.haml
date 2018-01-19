@@ -1,29 +1,30 @@
 = render partial: 'shared/header', locals: { back: 'true', title: 'Download BECL Books', icon: 'logo-mark.svg'}
 .page-content
-  .block-title{style:"font-weight:bolder;"} Downloads Book
+  .block
+    Please use the below links to download/view the original BECL
+    %span.italic Basic Elements of Christian Life
+    Books:
+  .block-title{style:"font-weight:bolder;"} DOWNLOAD PDF BOOKS
   .list
     %ul
       %li
         .item-content{style:"color:#2679b5;font-weight:bolder;"}
-          %a.close-panel.item-link.item-inner.item-title.link{href:"/home/popup" , class: "close-panel item-link"}
-            %i.fa.fa-file-pdf-o
+          %a.close-panel.item-link.item-inner.item-title.link{href:"/home/popup?book=1" , class: "close-panel item-link"}
+            %i.fa.fa-file-pdf-o.red
             &nbsp;
-            Basic Elements of the Christian Life, vol. 1
-            &nbsp;
-            %i.fa.fa-arrow-right
+            BECL Book, Vol 1
+            %i.fa.fa-external-link
       %li
         .item-content{style:"color:#2679b5;font-weight:bolder;"}
-          %a.close-panel.item-link.item-inner.item-title.link{href:"/home/popup" , class: "close-panel item-link"}
-            %i.fa.fa-file-pdf-o
+          %a.close-panel.item-link.item-inner.item-title.link{href:"/home/popup?book=2" , class: "close-panel item-link"}
+            %i.fa.fa-file-pdf-o.red
             &nbsp;
-            Basic Elements of the Christian Life, vol. 2
-            &nbsp;
-            %i.fa.fa-arrow-right
+            BECL Book, Vol 2
+            %i.fa.fa-external-link
       %li
         .item-content{style:"color:#2679b5;font-weight:bolder;"}
-          %a.close-panel.item-link.item-inner.item-title.link{href:"/home/popup" , class: "close-panel item-link"}
-            %i.fa.fa-file-pdf-o
+          %a.close-panel.item-link.item-inner.item-title.link{href:"/home/popup?book=3" , class: "close-panel item-link"}
+            %i.fa.fa-file-pdf-o.red
             &nbsp;
-            Basic Elements of the Christian Life, vol. 3
-            &nbsp;
-            %i.fa.fa-arrow-right
+            BECL Book, Vol 3
+            %i.fa.fa-external-link
