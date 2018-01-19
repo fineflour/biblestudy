@@ -1,19 +1,78 @@
-= render partial: 'shared/header', locals: { back: 'false', title: 'Bfa Study Companion', icon: 'logo-mark.svg' }
+= render partial: 'shared/header', locals: { back: 'false', title: 'BfA Study Companion', icon: 'logo-mark.svg' }
 .page-content
   .block-title{style:"font-weight:bolder;"} STUDY
   .list
     %ul
-      = panel_link text: "Choose a Bible Study Unit", icon: 'filter.svg', path: 'home/index'
-      = panel_link text: "Companion to Basic Elements of the Christian Life", icon: 'study_companion.jpg', path: 'home/companion_to_becl'
-      = panel_link text: "Download Basic Elements of the Christian Life Books", icon: 'download-icon.png', path: 'home/download_becl_books'
+      %li
+        = link_to 'home/index', class: 'close-panel item-link ripple-color-red' do
+          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+            .item-inner
+              .item-title
+                %i.fa.fa-sliders
+                &nbsp;
+                Choose a Bible Study Unit
+      %li
+        = link_to 'home/companion_to_becl', class: 'close-panel item-link ripple-color-red' do
+          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+            .item-inner
+              .item-title
+                %i.fa.fa-life-ring
+                &nbsp;
+                Companion to BECL (Basic Elements of the Christian Life)
+      %li
+        = link_to 'home/download_becl_books', class: 'close-panel item-link ripple-color-red' do
+          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+            .item-inner
+              .item-title
+                %i.fa.fa-download
+                &nbsp;
+                Download BECL Books (Basic Elements of the Christian Life Books)
+
+
   .block-title{style:"font-weight:bolder;"} SPREAD THE WORD
   .list
     %ul
-      = panel_link text: "Facebook", icon: 'fb.jpg'
-      = panel_link text: "More Ways to Share", icon: 'share.jpg'
-      = panel_link text: "Order a Free New Testament", icon: 'order.jpg'
+      %li
+        = link_to '#', class: 'close-panel item-link ripple-color-red' do
+          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+            .item-inner
+              .item-title
+                %i.fa.fa-facebook-square
+                &nbsp;
+                Facebook
+      %li
+        = link_to '#', class: 'close-panel item-link ripple-color-red' do
+          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+            .item-inner
+              .item-title
+                %i.fa.fa-share-alt-square
+                &nbsp;
+                More Ways to Share
+      %li
+        = link_to '#', class: 'close-panel item-link ripple-color-red' do
+          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+            .item-inner
+              .item-title
+                %i.fa.fa-book
+                &nbsp;
+                Order a Free New Testament
+
   .block-title{style:"font-weight:bolder;"} ABOUT
   .list
     %ul
-      = panel_link text: "Bibles for America", icon: 'logo-mark.svg'
-      = panel_link text: "The Recovery Version", icon: 'recovery_version.jpg'
+      %li
+        = link_to '#', class: 'close-panel item-link ripple-color-red' do
+          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+            .item-inner
+              .item-title
+                %i.fa.fa-book
+                &nbsp;
+                Bibles for America
+      %li
+        = link_to '#', class: 'close-panel item-link ripple-color-red' do
+          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+            .item-inner
+              .item-title
+                %i.fa.fa-code-fork
+                &nbsp;
+                The Recovery Version

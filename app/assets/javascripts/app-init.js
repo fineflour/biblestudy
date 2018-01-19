@@ -27,6 +27,10 @@
         path: '/home/download_becl_books',
         url: '/home/download_becl_books',
       },
+      {
+        path: '/home/popup',
+        url: '/home/popup',
+      },
     ],
   });
 

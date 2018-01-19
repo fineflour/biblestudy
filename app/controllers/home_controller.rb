@@ -12,6 +12,9 @@ class HomeController < ApplicationController
   def sample_page
   end
 
+  def popup
+  end
+
   def pages
     path = 'home/pages/'+params[:file]
     render path
