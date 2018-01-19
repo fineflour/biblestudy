@@ -24,12 +24,8 @@
         url: '/home/companion_to_becl',
       },
       {
-        path: '/companion_pdf/2018_BECL_Vol_1_companion_FINAL.pdf',
-        url: '/companion_pdf/2018_BECL_Vol_1_companion_FINAL.pdf',
-      },
-      {
-        path: '/home/sample_page',
-        url: '/home/sample_page',
+        path: '/home/download_becl_books',
+        url: '/home/download_becl_books',
       },
     ],
   });

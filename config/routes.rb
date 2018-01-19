@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get 'home/welcome_page'
   get 'home/pages/:file' => 'home#pages'
   get 'home/companion_to_becl'
-  get 'home/sample_page'
+  get 'home/download_becl_books'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
