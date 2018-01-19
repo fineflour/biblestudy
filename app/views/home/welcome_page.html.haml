@@ -1,11 +1,11 @@
-= render partial: 'shared/header', locals: { back: "false", title: "Bfa Study Companion" }
+= render partial: 'shared/header', locals: { back: 'false', title: 'Bfa Study Companion', icon: 'logo-mark.svg' }
 .page-content
   .block-title{style:"font-weight:bolder;"} STUDY
   .list
     %ul
       = panel_link text: "Choose a Bible Study Unit", icon: 'filter.svg', path: 'home/index'
-      = panel_link text: "Look up a verse", icon: 'search.jpg'
-      = panel_link text: "Bible Reading Scheduler", icon: 'calendar.jpg'
+      = panel_link text: "Companion to Basic Elements of the Christian Life", icon: 'study_companion.jpg', path: 'home/companion_to_becl'
+      = panel_link text: "Download Basic Elements of the Christian Life Books", icon: 'download-icon.png'
   .block-title{style:"font-weight:bolder;"} SPREAD THE WORD
   .list
     %ul

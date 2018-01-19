@@ -6,6 +6,12 @@ class HomeController < ApplicationController
   def welcome_page
   end
 
+  def companion_to_becl
+  end
+
+  def sample_page
+  end
+
   def pages
     path = 'home/pages/'+params[:file]
     render path
