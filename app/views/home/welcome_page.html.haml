@@ -1,11 +1,11 @@
 = render partial: 'shared/header', locals: { back: 'false', title: 'BfA Study Companion', icon: 'logo-mark.svg' }
 .page-content
-  .block-title{style:"font-weight:bolder;"} STUDY
+  .block-title.topic STUDY
   .list
     %ul
       %li
         = link_to 'home/index', class: 'close-panel item-link ripple-color-red' do
-          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+          .item-content.list-item
             .item-inner
               .item-title
                 %i.fa.fa-list.pink
@@ -13,7 +13,7 @@
                 Bible Study Topics
       %li
         = link_to 'home/companion_to_becl', class: 'close-panel item-link ripple-color-red' do
-          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+          .item-content.list-item
             .item-inner
               .item-title
                 %i.fa.fa-briefcase.blue
@@ -21,7 +21,7 @@
                 Companion to BECL (Basic Elements of the Christian Life)
       %li
         = link_to 'home/download_becl_books', class: 'close-panel item-link ripple-color-red' do
-          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+          .item-content.list-item
             .item-inner
               .item-title
                 %i.fa.fa-download.violet
@@ -34,7 +34,7 @@
     %ul
       %li
         = link_to 'http://biblesforamerica.org/free-bible/', class: 'link external close-panel item-link ripple-color-red', target: :blank do
-          .item-content{style:"color:#2679b5;font-weight:bolder;"}
+          .item-content.list-item
             .item-inner
               .item-title
                 %i.fa.fa-book.green
