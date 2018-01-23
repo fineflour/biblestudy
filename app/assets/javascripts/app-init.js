@@ -5,8 +5,7 @@
     theme: 'ios',
     panel: {
       swipe: 'left',
-      leftBreakpoint: 768,
-      rightBreakpoint: 1024,
+      swipeActiveArea: -1,
     },
     routes: [
       {
