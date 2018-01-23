@@ -19,6 +19,10 @@ h4:active{
   border: 1px solid grey;
 }
 
+h4:focus {
+  border: 1px solid grey;
+}
+
 h4.highlight {
   background-color: #ffedcc;
   border: 1px solid #ffedcc;
@@ -29,6 +33,10 @@ h4.highlight:hover {
 }
 
 h4.highlight:active {
+  border: 1px solid grey;
+}
+
+h4.highlight:focus {
   border: 1px solid grey;
 }
 
@@ -76,13 +84,6 @@ h3 {
   color: #d53f40;
 }
 
-.green {
-  color: #9abc32;
-}
-
-.blue {
-  color: #6fb3e0;
-}
 
 .light-blue {
   color: #4f9acb;
@@ -92,13 +93,6 @@ h3 {
   color: #003a62;
 }
 
-.violet {
-  color: #cb6fd7;
-}
-
-.pink {
-  color: #be2f64;
-}
 
 /* topics headings */
 
