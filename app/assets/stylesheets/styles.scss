@@ -13,7 +13,10 @@ h4 {
 
 h4:hover{
   border: 1px solid grey;
-  box-shadow: 1px 3px;
+}
+
+h4:active{
+  border: 1px solid grey;
 }
 
 h4.highlight {
@@ -23,7 +26,10 @@ h4.highlight {
 
 h4.highlight:hover {
   border: 1px solid grey;
-  box-shadow: 1px 3px;
+}
+
+h4.highlight:active {
+  border: 1px solid grey;
 }
 
 
@@ -76,6 +82,14 @@ h3 {
 
 .blue {
   color: #6fb3e0;
+}
+
+.light-blue {
+  color: #4f9acb;
+}
+
+.dark-blue {
+  color: #003a62;
 }
 
 .violet {
