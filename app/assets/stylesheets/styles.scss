@@ -54,8 +54,9 @@ h3 {
 
 .superscript-top {
   position: relative;
-  margin-left: 2px;
+  margin-left: -1px;
   top: -3px;
+  color:red;
 }
 
 .hr{
@@ -108,4 +109,8 @@ h3 {
 .popup-title {
   font-weight: bold;
   font-style: italic;
+}
+
+.separete-script {
+  margin-left:  -6px;
 }
