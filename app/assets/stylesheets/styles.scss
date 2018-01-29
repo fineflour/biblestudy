@@ -52,10 +52,11 @@ h3 {
   font-weight: bold;
 }
 
-.superscript-top {
+.footnote {
   position: relative;
-  margin-left: 2px;
+  margin-left: -1px;
   top: -3px;
+  color: #DD0C0C;
 }
 
 .hr{
@@ -108,4 +109,8 @@ h3 {
 .popup-title {
   font-weight: bold;
   font-style: italic;
+}
+
+.footnote-box {
+  margin-left:  -6px;
 }
