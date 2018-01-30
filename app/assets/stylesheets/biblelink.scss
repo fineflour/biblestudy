@@ -1,23 +1,50 @@
-.biblelink {
 
-}
 
 .biblelink__begin {
-
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .biblelink__middle {
-
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .biblelink__end {
-
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.biblelink__highlight {
-
+/*.biblelink__highlight {
+  background-color: #ffedcc;
+  border: 1px solid #ffedcc;
 }
+
+.biblelink__highlight:hover {
+  border: 1px solid grey;
+}
+
+.biblelink__highlight:active {
+  border: 1px solid grey;
+}
+
+.biblelink__highlight:focus {
+  border: 1px solid grey;
+}*/
 
 .biblelink__note {
+  position: relative;
+  margin-left: -1px;
+  top: -3px;
+  color: #DD0C0C;
+}
 
+.biblelink__box {
+  margin-left:  -6px;
 }
