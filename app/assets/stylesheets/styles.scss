@@ -114,3 +114,20 @@ h3 {
 .footnote-box {
   margin-left:  -6px;
 }
+
+.footnote-begin {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.footnote-mid {
+  border-radius: 0px;
+}
+
+.footnote-end {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
