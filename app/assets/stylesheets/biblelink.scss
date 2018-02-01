@@ -1,23 +1,51 @@
+.biblelink {
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: normal;
+  background-color: #eee;
+  border-radius: 7px;
+  padding: 8px 10px;
+  border: 1px solid #eee;
+}
 
-.biblelink__begin {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+.biblelink:hover {
+  border: 1px solid grey;
+}
+
+.biblelink:active {
+  border: 1px solid grey;
+}
+
+.biblelink:focus {
+  border: 1px solid grey;
+}
+
+.biblelink--begin {
+  margin-right: -1px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-.biblelink__middle {
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
+.biblelink--middle {
+  margin-left: 1px;
+  margin-right: 0px;
+  border-radius: 0px;
+}
+
+.biblelink--end {
+  margin-left: 2px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
 }
 
-.biblelink__end {
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+.biblelink--highlight {
+  background-color: #ffedcc;
+  border: 1px solid #ffedcc;
 }
 
 .biblelink__note {
@@ -25,8 +53,4 @@
   margin-left: -1px;
   top: -3px;
   color: #DD0C0C;
-}
-
-.biblelink__box {
-  margin-left:  -6px;
 }
