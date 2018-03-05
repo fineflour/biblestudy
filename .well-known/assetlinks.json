@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "org.bfa.bfa_app",
+    "sha256_cert_fingerprints":
+    ["C9:59:75:CA:3D:56:43:DC:1D:1E:5C:B0:46:DD:7D:C5:7E:53:D4:6C:7F:91:3B:A3:19:FF:41:AE:A9:6A:DD:83"]
+  }
+}]
