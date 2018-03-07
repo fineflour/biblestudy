@@ -16,5 +16,9 @@ module Rcvtopicalguide
     # -- all .rb files in that directory are automatically loaded.
 
     ENV['APP_URL'] = "https://#{ENV['HEROKU_APP_NAME']}.herokuapp.com" if ENV['HEROKU_APP_NAME']
+    config.assets.precompile += %w(*.png *.jpg *.json)
+    config.autoload_paths += %W(#{config.root}/.well-known)
+    config.autoload_paths += Dir["#{config.root}/.well-known/"]
+    config.autoload_paths += Dir["#{config.root}/lib/**"]
   end
 end
